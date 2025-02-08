@@ -25,7 +25,7 @@ function App() {
       <Navbar/>
       {showAlert && <Alert/>}
         <Routes>
-            <Route path="/" element={<Information name={name} setName={setName} setShowAlert={setShowAlert} setCategory={setCategory}/>}/>
+            <Route path="/Quiz-react" element={<Information name={name} setName={setName} setShowAlert={setShowAlert} setCategory={setCategory}/>}/>
             {name && 
             <Route path="/question" element={<Questions name={name} apikey = {apikey} setScore={setScore} score={score} category={category}/>}/>}
             <Route path="/score" element={<Score name={name} score={score}/>}/>
